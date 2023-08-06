@@ -1,0 +1,40 @@
+<script>
+  //Hoisting
+  console.log(`Tem alguma variavel com este nome variavel global?` , variavel_global );
+  { // Escopo 
+    var variavel_global = 200 ;
+  }
+  console.log(`Tem alguma variavel com este nome ?` , variavel_global );
+/*
+
+Apenas declarações são hoisted(içadas, em português)
+O JavaScript apenas eleva (hoists) as declarações, não as inicializações. Se uma variável for declarada e inicializada após usá-la, o valor será undefined. Por exemplo:
+
+JS
+Copy to Clipboard
+
+console.log(num); // Retorna undefined
+var num;
+num = 6;
+
+*/
+
+  /*
+
+  quando uma variavel é definida por um escopo e referenciada fora dele 
+
+  e se for do tipo var  GLOBAL
+  ::::::::::Automaticamente o 
+
+  */
+
+
+    // não tem Hoisting  dentro da let 
+  console.log(`----Tem alguma variavel com este nome variavel global?` , variavel_global );
+  { // Escopo 
+    let variavel_global = 100 ;
+  }
+  console.log(`---Tem alguma variavel com este nome ?` , variavel_global );
+  
+
+</script>
